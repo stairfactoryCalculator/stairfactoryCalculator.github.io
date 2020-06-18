@@ -1,91 +1,97 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Right angle triangle calculator</title>
-  <meta name="description" content="Calculate angles and lengths on 90 degree triangles">
-  <meta name="author" content="Dennis Khelvaly">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>Right angle triangle calculator</title>
+    <meta name="description" content="Calculate angles and lengths on 90 degree triangles">
+    <meta name="author" content="Dennis Khelvaly">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-    html
-{
-    overflow: hidden;
-}
+    html {
+        overflow: hidden;
+    }
 
-body
-{
-    margin: 0;
-    box-sizing: border-box;
-}
+    body {
+        margin: 0;
+        box-sizing: border-box;
+    }
 
-html, body
-{
-    height: 100%;
-}
-@media only screen 
-and (min-device-width: 1001px)
-{ 
-    #triangle{
-        height:65vh;
-        width:65vh;
+    html,
+    body {
+        height: 100%;
     }
-    #a{
-        top: 38vh !important;
-        left: 46vh !important;
-        font-size: 140% !important;
+
+    @media only screen and (min-device-width: 1001px) {
+        #triangle {
+            height: 65vh;
+            width: 65vh;
+        }
+
+        #a {
+            top: 38vh !important;
+            left: 46vh !important;
+            font-size: 140% !important;
+        }
+
+        #b {
+            top: 58vh !important;
+            left: 62vh !important;
+            font-size: 140% !important;
+        }
+
+        #c {
+            top: 26vh !important;
+            left: 77vh !important;
+            font-size: 140% !important;
+        }
+
+        #d {
+            left: 46vh !important;
+            top: 17vh !important;
+            font-size: 140% !important;
+        }
+
+        #e {
+            top: 57vh !important;
+            left: 84vh !important;
+            font-size: 140% !important;
+        }
+
+        img {
+            height: 66% !important;
+            left: 42vh !important;
+            position: absolute !important;
+        }
     }
-    #b{
-        top: 58vh !important;
-        left: 62vh !important;
-        font-size: 140% !important;
+
+    @media only screen and (max-device-width: 1001px) {
+        #butt {
+            display: block;
+            margin: auto;
+            margin-top: 10%;
+            font-size: 264%;
+            padding: 20px;
+            height: auto !important;
+            position: relative !important;
+            top: auto !important;
+            right: auto !important;
+        }
+
+        #b {
+            top: 50vh !important;
+        }
+
+        #c {
+            top: 25vh !important;
+        }
     }
-    #c{
-        top: 26vh !important;
-        left: 77vh !important;
-        font-size: 140% !important;
-    }
-    #d{
-        left: 46vh !important;
-        top: 17vh !important;
-        font-size: 140% !important;
-    }
-    #e{
-        top: 57vh !important;
-        left: 84vh !important;
-        font-size: 140% !important;
-    }
-    img{
-        height: 66% !important;
-        left: 42vh !important;
-        position: absolute !important;
-    }
-}
-@media only screen 
-and (max-device-width: 1001px)
-{ 
-    #butt{
-        display: block;
-        margin:auto;
-        margin-top:10%;
-        font-size:264%;
-        padding:20px;
-        height:auto !important;
-        position: relative !important;
-        top:auto !important;
-        right:auto !important;
-    }
-    #b{
-        top: 50vh !important;
-    }
-    #c{
-        top: 25vh !important;
-    }
-}
 </style>
+
 <body>
-    <div id="triangle" style="display: block;margin:auto;" >
+    <div id="triangle" style="display: block;margin:auto;">
         <img style="height:100%;margin:auto;" src="./triangle.png">
         <b style="position: absolute;top: 32vh;left: 4vh;font-size: 400%;width: 0px;" id="a">A</b>
         <b style="position: absolute;top: 50vh;left: 20vh;font-size: 400%;width: 0px;" id="b">B</b>
@@ -101,9 +107,12 @@ and (max-device-width: 1001px)
         <input id="aInp" style="display: inline-block;font-size: 264%;" type="number" placeholder="Length of A...">
         <br>
         <b style="font-size: 400%;margin-left:10%;display: inline-block;">Length of B :</b>
-        <input id="bInp" style="display: inline-block;font-size: 264%;margin-left:-3px;" type="number" placeholder="Length of B...">
-        <button onclick="calculateTriangle()" style="height:20vh;position:absolute;top:10px;right:25px;" id="butt">Calculate</button>
+        <input id="bInp" style="display: inline-block;font-size: 264%;margin-left:-3px;" type="number"
+            placeholder="Length of B...">
+        <button onclick="calculateTriangle()" style="height:20vh;position:absolute;top:10px;right:25px;"
+            id="butt">Calculate</button>
     </div>
 </body>
 <script src="main.js"></script>
+
 </html>
